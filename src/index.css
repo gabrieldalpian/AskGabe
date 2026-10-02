@@ -1,0 +1,109 @@
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #eef4fd;
+  --border: #e2e9f4;
+  --text: #0f1b2d;
+  --text-muted: #5b6b82;
+  --brand: #2563eb;
+  --brand-hover: #1d4ed8;
+  --brand-soft: #e8f1ff;
+  --brand-soft-text: #1d4ed8;
+  --on-brand: #ffffff;
+  --link: #1d4ed8;
+  --focus-ring: rgb(37 99 235 / 0.3);
+  --shadow-md: 0 1px 2px rgb(15 27 45 / 0.04), 0 8px 24px rgb(15 27 45 / 0.08);
+  --code-bg: #f6f9fe;
+  --switch-thumb: #ffffff;
+
+  /* Syntax highlighting */
+  --syn-keyword: #cf222e;
+  --syn-string: #0a3069;
+  --syn-comment: #6e7781;
+  --syn-number: #0550ae;
+  --syn-function: #8250df;
+  --syn-builtin: #953800;
+  --syn-tag: #116329;
+
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* index.html sets data-theme from the saved choice or the system setting. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --surface: #111b2e;
+  --surface-2: #17243b;
+  --border: #223049;
+  --text: #e6edf8;
+  --text-muted: #94a3bb;
+  --brand: #2563eb;
+  --brand-hover: #3b76f0;
+  --brand-soft: #172a4d;
+  --brand-soft-text: #a9c8ff;
+  --link: #7cb2ff;
+  --focus-ring: rgb(96 165 250 / 0.4);
+  --shadow-md: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
+  --code-bg: #0e1829;
+  --switch-thumb: #22406e;
+
+  --syn-keyword: #ff7b72;
+  --syn-string: #a5d6ff;
+  --syn-comment: #8b949e;
+  --syn-number: #79c0ff;
+  --syn-function: #d2a8ff;
+  --syn-builtin: #ffa657;
+  --syn-tag: #7ee787;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
