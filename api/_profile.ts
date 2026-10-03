@@ -1,7 +1,7 @@
 export const info = {
   name: "Gabriel Dalpian de Castilhos Pedro",
   location: "New York City Metropolitan Area",
-  age: "22 years old",
+  age: "23 years old",
   born: "Brazil",
   height: "6 foot",
   weight: "180lbs",
@@ -9,7 +9,7 @@ export const info = {
     course: "Information Technology",
     institution: "New Jersey Institute of Technology (NJIT)",
     grade: "Senior",
-    expectedGraduation: "May 2027",
+    expectedGraduation: "December 2027",
     degree: "Bachelor's Degree"
   },
   interests: ["sports", "programming", "travelling", "and watching netflix" ],
@@ -18,16 +18,23 @@ export const info = {
     frequent: "Running",
     favoriteRunningLocations: ["Hoboken", "West New York"],
     note: "I like to run near rivers with views of New York",
-    favoriteTeam: "Grêmio Football Porto Alegrense"
+    favoriteTeam: "Grêmio Football Porto Alegrense",
+    Shows: "My favorite show is Suits"
   },
   github: "github.com/gabrieldalpian",
-  linkedin: "linkedin.com/in/gabrieldecastilhospedro",
+  linkedin: "linkedin.com/in/pedrogabriel74/",
   workExperience: [
     {
       position: "Software Engineer Intern",
       company: "Think Big Technology",
       period: "September 2025 to December 2025",
       details: "Built features using TypeScript and Next.js"
+    },
+    {
+      position: "Programming Instructor",
+      company: "Casa de Cultura Mario Quintana",
+      period: "June 2026 to July 2026",
+      details: "Taught JavaScript to kids from ages of 7-12"
     }
   ],
   certifications: ["Gabriel is trilingual certified"],
@@ -36,7 +43,7 @@ export const info = {
     { name: "English", level: "Advanced" },
     { name: "Spanish", level: "advanced" }
   ],
-  programmingLanguages: ["JavaScript", "TypeScript", "Python", "Java", "SQL", "HTML", "CSS"], frameworks: ["React", "Next.js", "Express", "Node.js", "TailwindCSS", "Bootstrap"],
+  programmingLanguages: ["JavaScript", "TypeScript", "Python", "Java", 'Go', "SQL", "HTML", "CSS"], frameworks: ["React", "Next.js", "Express", "Node.js", "TailwindCSS", "Bootstrap"],
   databases: ["MySQL", "PostgreSQL", "MongoDB", "MariaDB"],
   tools: ["Git/Github"],
   funFacts: [
